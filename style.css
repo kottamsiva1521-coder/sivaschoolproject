@@ -1,0 +1,1835 @@
+/* =========================================================
+   SIVA INTERNATIONAL SCHOOL
+   SCHOOL MANAGEMENT SYSTEM
+   COMPLETE WEBSITE CSS
+   ========================================================= */
+
+
+/* =========================================================
+   1. BASIC SETTINGS
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input,
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================================
+   2. HEADER
+   ========================================================= */
+
+header {
+    width: 100%;
+    min-height: 82px;
+
+    background: #0b2545;
+    color: white;
+
+    padding: 15px 6%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.18);
+}
+
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 48px;
+    height: 48px;
+
+    background: #f4b942;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+}
+
+.logo h1 {
+    font-size: 21px;
+    line-height: 1.2;
+}
+
+.logo p {
+    font-size: 12px;
+    color: #cbd5e1;
+}
+
+
+/* Navigation */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    padding: 8px 2px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f4b942;
+}
+
+
+/* =========================================================
+   3. HOME HERO SECTION
+   ========================================================= */
+
+.hero {
+    min-height: 680px;
+
+    background-image:
+        url("https://maxfortpaschimvihar.com/wp-content/uploads/2025/08/New-Project-33.png");
+
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    padding: 70px 7%;
+}
+
+
+/* Dark overlay */
+
+.hero-overlay {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(4, 23, 43, 0.90),
+            rgba(4, 23, 43, 0.55),
+            rgba(4, 23, 43, 0.15)
+        );
+}
+
+
+/* Hero content */
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 750px;
+
+    color: white;
+}
+
+.hero-tag {
+    display: inline-block;
+
+    color: #f4b942;
+
+    border: 1px solid #f4b942;
+
+    background: rgba(244, 185, 66, 0.12);
+
+    border-radius: 30px;
+
+    padding: 7px 15px;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 58px;
+
+    line-height: 1.08;
+
+    margin-bottom: 22px;
+}
+
+.hero h2 span {
+    display: block;
+    color: #f4b942;
+}
+
+.hero p {
+    max-width: 650px;
+
+    color: #e2e8f0;
+
+    font-size: 18px;
+
+    margin-bottom: 30px;
+}
+
+
+/* Hero buttons */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn {
+    padding: 13px 25px;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: #f4b942;
+    color: #0b2545;
+}
+
+.primary-btn:hover {
+    background: white;
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    color: white;
+    border: 1px solid white;
+}
+
+.secondary-btn:hover {
+    background: white;
+    color: #0b2545;
+}
+
+
+/* =========================================================
+   4. STATISTICS
+   ========================================================= */
+
+.stats {
+    background: #0b2545;
+
+    color: white;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    padding: 28px 7%;
+
+    gap: 20px;
+}
+
+.stat-box {
+    text-align: center;
+
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.stat-box:last-child {
+    border-right: none;
+}
+
+.stat-box strong {
+    display: block;
+
+    color: #f4b942;
+
+    font-size: 30px;
+}
+
+.stat-box span {
+    color: #cbd5e1;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   5. COMMON SECTION
+   ========================================================= */
+
+.section {
+    padding: 80px 7%;
+}
+
+.gray-bg {
+    background: #f4f7fa;
+}
+
+
+/* Section heading */
+
+.section-heading {
+    max-width: 720px;
+
+    text-align: center;
+
+    margin: 0 auto 50px;
+}
+
+.section-heading span,
+.small-title {
+    color: #d99500;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    color: #0b2545;
+
+    font-size: 38px;
+
+    line-height: 1.2;
+
+    margin: 8px 0 12px;
+}
+
+.section-heading p {
+    color: #64748b;
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   6. HOME ABOUT SECTION
+   ========================================================= */
+
+.home-grid {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1.1fr 1fr;
+
+    gap: 55px;
+
+    align-items: center;
+}
+
+
+/* Home image */
+
+.home-image {
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.home-image img {
+    height: 430px;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+.home-image:hover img {
+    transform: scale(1.04);
+}
+
+
+/* Home text */
+
+.home-text h3 {
+    color: #0b2545;
+
+    font-size: 31px;
+
+    line-height: 1.2;
+
+    margin-bottom: 18px;
+}
+
+.home-text p {
+    color: #64748b;
+
+    margin-bottom: 15px;
+}
+
+
+/* Check list */
+
+.check-list {
+    margin: 25px 0;
+}
+
+.check-list p {
+    color: #334155;
+
+    font-weight: bold;
+
+    margin-bottom: 9px;
+}
+
+
+/* Small button */
+
+.small-btn {
+    display: inline-block;
+
+    background: #0b2545;
+
+    color: white;
+
+    padding: 12px 22px;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.small-btn:hover {
+    background: #f4b942;
+
+    color: #0b2545;
+}
+
+
+/* =========================================================
+   7. FEATURE CARDS
+   ========================================================= */
+
+.feature-grid {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.feature-card {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 10px;
+
+    border: 1px solid #e2e8f0;
+
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.feature-icon {
+    width: 58px;
+    height: 58px;
+
+    background: #fff4d6;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 28px;
+
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    color: #0b2545;
+
+    font-size: 21px;
+
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: #64748b;
+
+    margin-bottom: 18px;
+}
+
+.feature-card a {
+    color: #d99500;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   8. CAMPUS BANNER
+   ========================================================= */
+
+.campus-banner {
+    min-height: 440px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.campus-banner img {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.campus-banner::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(11, 37, 69, 0.88),
+            rgba(11, 37, 69, 0.30)
+        );
+}
+
+.campus-content {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 650px;
+
+    padding: 120px 7%;
+
+    color: white;
+}
+
+.campus-content span {
+    color: #f4b942;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.campus-content h2 {
+    font-size: 42px;
+
+    line-height: 1.15;
+
+    margin: 10px 0 15px;
+}
+
+.campus-content p {
+    color: #e2e8f0;
+
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   9. PAGE HERO
+   ========================================================= */
+
+.page-hero {
+    min-height: 350px;
+
+    background-image:
+        linear-gradient(
+            rgba(11, 37, 69, 0.78),
+            rgba(11, 37, 69, 0.78)
+        ),
+        url("https://maxfortpaschimvihar.com/wp-content/uploads/2025/08/New-Project-33.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+
+    padding: 40px;
+}
+
+.page-hero span {
+    color: #f4b942;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.page-hero h2 {
+    font-size: 48px;
+
+    line-height: 1.15;
+
+    margin: 10px 0;
+}
+
+.page-hero p {
+    color: #dbe4ee;
+
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   10. ABOUT PAGE
+   ========================================================= */
+
+.about-grid {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+
+/* Main about image */
+
+.about-image {
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.about-image img {
+    height: 470px;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+.about-image:hover img {
+    transform: scale(1.04);
+}
+
+
+/* About text */
+
+.about-content h2 {
+    color: #0b2545;
+
+    font-size: 38px;
+
+    line-height: 1.2;
+
+    margin: 10px 0 20px;
+}
+
+.about-content > p {
+    color: #64748b;
+
+    margin-bottom: 15px;
+}
+
+
+/* About points */
+
+.about-points {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+.about-points div {
+    background: #f4f7fa;
+
+    padding: 15px;
+
+    border-radius: 7px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.about-points strong {
+    color: #f0ad22;
+
+    font-size: 16px;
+}
+
+.about-points span {
+    color: #334155;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   11. VALUE CARDS
+   ========================================================= */
+
+.three-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.value-card {
+    background: white;
+
+    padding: 35px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    border: 1px solid #e2e8f0;
+
+    transition: 0.3s;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.07);
+}
+
+.value-card > div {
+    font-size: 42px;
+
+    margin-bottom: 12px;
+}
+
+.value-card h3 {
+    color: #0b2545;
+
+    margin-bottom: 10px;
+}
+
+.value-card p {
+    color: #64748b;
+}
+
+
+/* =========================================================
+   12. FACILITIES
+   ========================================================= */
+
+.facility-grid {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.facility-card {
+    background: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    border: 1px solid #e2e8f0;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s;
+}
+
+.facility-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.10);
+}
+
+.facility-card img {
+    width: 100%;
+
+    height: 240px;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+.facility-card:hover img {
+    transform: scale(1.04);
+}
+
+.facility-card h3 {
+    color: #0b2545;
+
+    padding: 20px 20px 5px;
+
+    font-size: 20px;
+}
+
+.facility-card p {
+    color: #64748b;
+
+    padding: 0 20px 25px;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   13. STUDENTS PAGE
+   ========================================================= */
+
+.student-intro {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+.student-intro h2 {
+    color: #0b2545;
+
+    font-size: 39px;
+
+    line-height: 1.2;
+
+    margin: 10px 0 18px;
+}
+
+.student-intro p {
+    color: #64748b;
+}
+
+.student-intro img {
+    height: 360px;
+
+    border-radius: 12px;
+
+    object-fit: cover;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.10);
+}
+
+
+/* Number cards */
+
+.number-card {
+    background: white;
+
+    padding: 35px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    border: 1px solid #e2e8f0;
+
+    transition: 0.3s;
+}
+
+.number-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.07);
+}
+
+.number-card strong {
+    display: block;
+
+    color: #0b2545;
+
+    font-size: 38px;
+}
+
+.number-card span {
+    color: #64748b;
+}
+
+
+/* =========================================================
+   14. TABLE
+   ========================================================= */
+
+.table-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    overflow-x: auto;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+table {
+    width: 100%;
+
+    min-width: 750px;
+
+    border-collapse: collapse;
+
+    background: white;
+}
+
+th {
+    background: #0b2545;
+
+    color: white;
+
+    padding: 16px;
+
+    font-size: 14px;
+}
+
+td {
+    padding: 15px;
+
+    text-align: center;
+
+    color: #475569;
+
+    border-bottom: 1px solid #e2e8f0;
+
+    font-size: 14px;
+}
+
+tbody tr {
+    transition: 0.2s;
+}
+
+tbody tr:hover {
+    background: #f8fafc;
+}
+
+
+/* Attendance labels */
+
+.good,
+.excellent {
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+.good {
+    color: #0369a1;
+
+    background: #e0f2fe;
+}
+
+.excellent {
+    color: #15803d;
+
+    background: #dcfce7;
+}
+
+
+/* =========================================================
+   15. CLASS GRID
+   ========================================================= */
+
+.class-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.class-grid div {
+    background: #0b2545;
+
+    color: white;
+
+    padding: 22px;
+
+    text-align: center;
+
+    border-radius: 7px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.class-grid div:hover {
+    background: #f4b942;
+
+    color: #0b2545;
+
+    transform: translateY(-4px);
+}
+
+
+/* =========================================================
+   16. TEACHERS
+   ========================================================= */
+
+.teacher-grid {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.teacher-card {
+    background: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    border: 1px solid #e2e8f0;
+
+    transition: 0.3s;
+}
+
+.teacher-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.10);
+}
+
+.teacher-card img {
+    width: 100%;
+
+    height: 280px;
+
+    object-fit: cover;
+}
+
+.teacher-info {
+    padding: 22px;
+}
+
+.teacher-info h3 {
+    color: #0b2545;
+
+    font-size: 19px;
+
+    margin-bottom: 4px;
+}
+
+.teacher-info span {
+    color: #d99500;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+.teacher-info p {
+    color: #64748b;
+
+    font-size: 14px;
+
+    margin-top: 8px;
+}
+
+
+/* =========================================================
+   17. ATTENDANCE
+   ========================================================= */
+
+.attendance-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.attendance-card {
+    background: white;
+
+    padding: 28px;
+
+    border-radius: 10px;
+
+    border: 1px solid #e2e8f0;
+}
+
+.attendance-head {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 18px;
+}
+
+.attendance-head h3 {
+    color: #0b2545;
+}
+
+.attendance-head p {
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+.attendance-head strong {
+    color: #168a5b;
+
+    font-size: 24px;
+}
+
+
+/* Progress */
+
+.progress {
+    width: 100%;
+
+    height: 10px;
+
+    background: #e2e8f0;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    margin-bottom: 12px;
+}
+
+.progress-bar {
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #168a5b,
+            #42c98c
+        );
+
+    border-radius: 20px;
+}
+
+.attendance-card > p {
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   18. CONTACT PAGE
+   ========================================================= */
+
+.contact-grid {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 40px;
+}
+
+
+/* Contact information */
+
+.contact-info {
+    background: #0b2545;
+
+    color: white;
+
+    border-radius: 12px;
+
+    padding: 42px;
+}
+
+.contact-info h2 {
+    font-size: 36px;
+
+    line-height: 1.2;
+
+    margin: 10px 0 18px;
+}
+
+.contact-info > p {
+    color: #cbd5e1;
+
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    display: flex;
+
+    gap: 15px;
+
+    margin: 22px 0;
+}
+
+.contact-item > div:first-child {
+    width: 42px;
+
+    height: 42px;
+
+    background: rgba(244, 185, 66, 0.15);
+
+    border-radius: 7px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.contact-item strong {
+    color: #f4b942;
+
+    display: block;
+
+    margin-bottom: 3px;
+}
+
+.contact-item p {
+    color: #dbe4ee;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   19. CONTACT FORM
+   ========================================================= */
+
+.form-box {
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 12px;
+
+    border: 1px solid #e2e8f0;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.form-box h2 {
+    color: #0b2545;
+
+    font-size: 28px;
+
+    margin-bottom: 5px;
+}
+
+.form-box > p {
+    color: #64748b;
+
+    margin-bottom: 25px;
+}
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+form label {
+    display: block;
+
+    color: #334155;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-bottom: 6px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 6px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    margin-bottom: 17px;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #168a5b;
+
+    box-shadow:
+        0 0 0 3px rgba(22, 138, 91, 0.10);
+}
+
+form textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+
+    border: none;
+
+    background: #0b2545;
+
+    color: white;
+
+    padding: 14px;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #168a5b;
+}
+
+
+/* =========================================================
+   20. CONTACT IMAGE
+   ========================================================= */
+
+.contact-image {
+    height: 390px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.contact-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.contact-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(11, 37, 69, 0.82),
+            rgba(11, 37, 69, 0.20)
+        );
+}
+
+.contact-image > div {
+    position: absolute;
+
+    z-index: 2;
+
+    left: 7%;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: white;
+}
+
+.contact-image h2 {
+    font-size: 38px;
+
+    margin-bottom: 5px;
+}
+
+.contact-image p {
+    color: #e2e8f0;
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   21. FOOTER
+   ========================================================= */
+
+footer {
+    background: #071b32;
+
+    color: white;
+
+    padding: 40px 7% 0;
+}
+
+.footer-main {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding-bottom: 30px;
+}
+
+.footer-main h2 {
+    font-size: 20px;
+
+    margin-bottom: 5px;
+}
+
+.footer-main p {
+    color: #94a3b8;
+
+    font-size: 13px;
+}
+
+.footer-links {
+    display: flex;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.footer-links a {
+    color: #cbd5e1;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #f4b942;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+
+    padding: 18px 0;
+
+    text-align: center;
+
+    color: #64748b;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   22. RESPONSIVE - TABLET
+   ========================================================= */
+
+@media screen and (max-width: 1000px) {
+
+    header {
+        flex-direction: column;
+
+        padding: 18px 5%;
+    }
+
+    nav {
+        gap: 13px;
+    }
+
+    .hero h2 {
+        font-size: 45px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stat-box {
+        border-right: none;
+    }
+
+    .home-grid,
+    .about-grid,
+    .student-intro,
+    .contact-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .feature-grid,
+    .three-grid,
+    .facility-grid,
+    .teacher-grid,
+    .attendance-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .class-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================================================
+   23. RESPONSIVE - MOBILE
+   ========================================================= */
+
+@media screen and (max-width: 650px) {
+
+    header {
+        position: relative;
+
+        padding: 15px 4%;
+    }
+
+    .logo h1 {
+        font-size: 18px;
+    }
+
+    nav {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        width: 100%;
+
+        gap: 6px;
+    }
+
+    nav a {
+        background: #14385d;
+
+        padding: 7px;
+
+        border-radius: 4px;
+
+        text-align: center;
+
+        font-size: 12px;
+    }
+
+
+    /* Home */
+
+    .hero {
+        min-height: 600px;
+
+        padding: 40px 6%;
+    }
+
+    .hero h2 {
+        font-size: 35px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        text-align: center;
+    }
+
+
+    /* Stats */
+
+    .stats {
+        grid-template-columns: 1fr 1fr;
+
+        padding: 25px 4%;
+    }
+
+    .stat-box strong {
+        font-size: 25px;
+    }
+
+
+    /* Sections */
+
+    .section {
+        padding: 55px 5%;
+    }
+
+    .section-heading h2 {
+        font-size: 29px;
+    }
+
+    .home-text h3,
+    .about-content h2,
+    .student-intro h2 {
+        font-size: 29px;
+    }
+
+
+    /* Grids */
+
+    .feature-grid,
+    .three-grid,
+    .facility-grid,
+    .teacher-grid,
+    .attendance-grid,
+    .class-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Page hero */
+
+    .page-hero {
+        min-height: 270px;
+    }
+
+    .page-hero h2 {
+        font-size: 35px;
+    }
+
+
+    /* About */
+
+    .about-points {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image img,
+    .home-image img {
+        height: 300px;
+    }
+
+    .student-intro img {
+        height: 280px;
+    }
+
+
+    /* Contact */
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info,
+    .form-box {
+        padding: 28px;
+    }
+
+    .contact-info h2 {
+        font-size: 29px;
+    }
+
+    .contact-image {
+        height: 330px;
+    }
+
+    .contact-image h2 {
+        font-size: 30px;
+    }
+
+
+    /* Footer */
+
+    .footer-main {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+}
+
+
+/* Selected student row */
+
+.selected-row {
+    background: #fff4d6 !important;
+}
+
+.selected-row td {
+    color: #0b2545;
+    font-weight: bold;
+}
+
+
+/* Active navigation link */
+
+nav a.active {
+    color: #f4b942;
+}
